@@ -1,0 +1,73 @@
+<div style="text-align: center; padding: 60px 20px; background: #c19a5b; font-family: 'Noto Serif TC', serif; overflow: hidden; position: relative; width: 100vw; box-sizing: border-box;">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+
+    .main-title {
+      font-size: 2.8em;
+      font-weight: 600;
+      color: #ffffff;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.5), 0 0 16px rgba(255, 255, 255, 0.9);
+      animation: glow 3s ease-in-out infinite alternate, fadeInZoom 1.5s ease-out;
+      margin-top: 20px;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      color: #ffffff;
+      margin-top: 10px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 1400px;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+      animation: floatZoom 8s ease-in-out infinite alternate, fadeInZoom 2s ease-out;
+      z-index: 1;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      top: -10%;
+      left: 0;
+      width: 100%;
+      height: 150%;
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+      animation: moveGlow 40s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 6px rgba(255, 255, 255, 0.4); }
+      100% { text-shadow: 0 0 18px rgba(255, 255, 255, 0.9); }
+    }
+
+    @keyframes fadeInZoom {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes floatZoom {
+      0% { transform: scale(1) translateY(0); }
+      100% { transform: scale(1.015) translateY(-6px); }
+    }
+
+    @keyframes moveGlow {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+
+  <div class="bg-glow"></div>
+  <img src="https://res.cloudinary.com/dqd2zns9a/image/upload/v1748708853/%E5%A4%A7%E5%90%88%E6%99%AF_u7zk2j.jpg" alt="和平之像主視覺" class="hero-image">
+  <div class="main-title">和平之像・光耀於心</div>
+  <div class="subtitle">願這些雕像成為和平的記號，在人心中留下光的軌跡。</div>
+</div>
